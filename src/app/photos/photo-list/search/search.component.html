@@ -1,0 +1,22 @@
+<!-- margem top margem bottom -->
+<div class="text-center mt-3 mb-3">
+        <form>
+            <i aria-hidden="true" class="fa fa-search mr-2"></i>
+            <input 
+            class="rounded" type="search"
+            placeholder="Buscar..."
+            autofocus
+            (keyup) = "debounce.next($event.target.value)"
+            [value] = "value"
+            > 
+            <!-- debounce o valor que eu digitei -->
+    
+            <!-- Passo um valor para o debounce e o subscribe inscreve ele. -->        
+            <!-- No evento keyup com parenteses, é um eventBind -->
+            <!-- No evento keyup você vai avaliar essa expressão e jogar o valor dentro da propriedade filter -->
+        </form>
+    </div>
+    
+    <!-- {{filter}} -->
+    <!-- Usando pipe(tupe) ele transforma meu atrivuto em uma saida desejada... -->
+    <!-- Recebe dois parametros, a lista de photos e o filter -->

@@ -1,0 +1,9 @@
+<div class="text-center" *ngIf="hasMore; else messageTemplate">
+  <button class="btn btn-primary"> Carregar mais</button>
+</div>
+
+<!-- Variavel de template - variavel que identifica esse cara -->
+<ng-template #messageTemplate>
+  <p class="text-center text-muted"> Não tem mais dados para carregar</p>
+</ng-template>
+

@@ -1,0 +1,29 @@
+
+Inicio de criação da aplicação;
+npm install -g @angular/cli
+ng new meuprojeto
+cd meuprojeto
+ng serve
+
+No angular.json - > style- > carregar css global . scripts -> carregar script global
+
+INSTALAR BOOTSTRAP -> npm install bootstrap@4.1.1
+E depois configura em angular.json e coloca em script - >  "./node_modules/bootstrap/dist/css/bootstrap.min.css"
+
+Tenho compomentes - > E dentro do módulo tenho compomentes - > Se eu quiser usar os compomente importo o modulo ou um compomente de cada vez
+
+
+A importância de declarar o componente em um módulo
+Como passar dados para o componente através das inbound properties
+A diretiva `@NgModule
+Criação de um módulo e boas práticas
+
+
+criar um compomente - > ng generate compoment photo/photo-list - > Já cria tudo que eu preciso.... html, css, module e etcc..
+
+PRIMEIRO CRIA O MODULO, DEPOIS O COMPOMENTE.
+
+criar modulo -> ng generate module erros
+criar compomente -> ng generate component erros/not-found 
+
+Instalar awesome - > npm install font-awesome@4.7.0

@@ -1,0 +1,18 @@
+<ap-search
+    (onTyping) = "filter = $event" [value]="filter">
+    <!-- quando eu for procurar mais o fiter = "" e não apaga o campo de busca -->
+</ap-search>
+    <!-- evento onTyping, o event vai ser o valor que digitou no input que eu vou jogar no filter -->
+    
+<ap-photos
+    [photos]="photos | filterByDescription: filter">
+</ap-photos>
+
+<ap-load-button
+    (click)="load()"
+    [hasMore] = "hasMore">
+</ap-load-button>
+
+<!-- [] -> Vem da fonte de dados(componente) para o tamplate, nunca o contrário
+() -> Vai do tamplate para o componente.
+//Os dois são unidirecionais -->
